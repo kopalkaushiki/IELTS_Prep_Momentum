@@ -1,0 +1,54 @@
+/* --------------------------------------------------------------
+   DESIGN SYSTEM: Reassuring, energising, lightly gamified.
+   Professional — not childish. White background; colour on purpose.
+   Blue: progress, trust, structure
+   Green: completion, reassurance, success
+   Yellow: highlights, momentum, encouragement
+   -------------------------------------------------------------- */
+:root {
+  --bg: #f0d7e9;
+  --bg-subtle: #f8fafc;
+  --text: #000000;
+  --text-muted: #414c5a;
+  --border: #e2e8f0;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.06);
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Accent: use sparingly on important elements */
+  --blue: #2563eb;
+  --blue-light: #eff6ff;
+  --green: #036043;
+  --green-light: #41c7e8;
+  --yellow: #ca8a04;
+  --yellow-light: #fefce8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+}
+
+input,
+select {
+  font-family: var(--font);
+}

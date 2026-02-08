@@ -1,0 +1,59 @@
+/* Green: completion, reassurance, success */
+.wrap {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--green-light);
+  border: 2px solid var(--green);
+  border-radius: var(--radius-lg);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 50%;
+  animation: pop 0.5s ease-out 0.2s both;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.25rem;
+}
+
+.sub {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}

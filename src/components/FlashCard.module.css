@@ -1,0 +1,47 @@
+.wrap {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.card {
+  width: 100%;
+  min-height: 120px;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg);
+  border: 2px solid var(--blue);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  text-align: left;
+  font-size: 1rem;
+  color: var(--text);
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.12);
+}
+
+.side {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.nextBtn {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-radius: var(--radius);
+}
+
+.nextBtn:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}

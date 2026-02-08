@@ -1,0 +1,46 @@
+.card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.range {
+  font-size: 0.9rem;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.barWrap {
+  height: 6px;
+  background: var(--bg-subtle);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+}
+
+.bar {
+  height: 100%;
+  background: var(--blue);
+  border-radius: 999px;
+  transition: width 0.3s ease-out;
+}
+
+.status {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}

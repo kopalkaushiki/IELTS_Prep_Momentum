@@ -1,0 +1,209 @@
+.page {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 5rem;
+  background: var(--bg);
+}
+
+.headerCard {
+  text-align: center;
+  margin-bottom: 8rem;
+  padding: 2.5rem 2.25rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+.subtext {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.labelOptional {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.labelOptional span {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card {
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.card:hover {
+  border-color: var(--blue);
+  background: var(--blue-light);
+}
+
+.cardSelected {
+  border-color: var(--blue);
+  background: var(--blue-light);
+  color: var(--text);
+}
+
+.cardMain {
+  display: block;
+}
+
+.timeCard {
+  flex: 1;
+  min-width: 100px;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.timeCard:hover {
+  border-color: var(--blue);
+  background: var(--blue-light);
+}
+
+.timeLabel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.timeSub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.timeCard.cardSelected .timeLabel {
+  color: var(--text);
+}
+
+.sectionCard {
+  flex: 1;
+  min-width: 100px;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.sectionCard:hover {
+  border-color: var(--blue);
+  background: var(--blue-light);
+}
+
+.sectionIcon {
+  font-size: 1.1rem;
+}
+
+.sectionCard.cardSelected {
+  border-color: var(--blue);
+  background: var(--blue-light);
+}
+
+.inputWrap {
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1rem;
+  color: var(--text);
+  background: transparent;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputWrap:focus-within {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px var(--blue-light);
+}
+
+.ctaWrap {
+  margin-top: 0.5rem;
+}
+
+.cta {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--blue);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  box-shadow: var(--shadow-card);
+  transition: opacity 0.2s;
+}
+
+.cta:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.cta:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
