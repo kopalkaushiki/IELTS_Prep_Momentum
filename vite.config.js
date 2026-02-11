@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/IELTS_Prep_Momentum/',
   plugins: [react()],
   server: {
     proxy: {
